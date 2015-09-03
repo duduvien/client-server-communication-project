@@ -107,7 +107,8 @@ public class panelMainPage extends JPanel{
   } /* end of panelMainPage constructor */
 
   private void btnConnectActionPerformed(java.awt.event.ActionEvent eventBtnConnect){
-    JOptionPane.showConfirmDialog(null, "Hello! \n Here are the terms of references. Do you accept?", "Terms of References", JOptionPane.YES_NO_OPTION);
+    ImageIcon terms = new ImageIcon(panelDlSuccess.class.getResource("/terms.png"));
+    JOptionPane.showConfirmDialog(null, " Hello! \n Here are the terms of references. \n Do you accept?", "Terms of References", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, terms);
   }
 
 }
